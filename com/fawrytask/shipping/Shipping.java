@@ -25,7 +25,7 @@ public class Shipping {
     public double getShippingFees(){
         double fee=0;
         for(ShippableProduct p:item.keySet()){
-            fee+=(p.getWeight()/1000 * 10);
+            fee+=(p.getWeight()/1000 * 10)*item.get(p);
         }
         return fee;
     }

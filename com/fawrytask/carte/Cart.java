@@ -43,7 +43,7 @@ public class Cart {
     public double getTotalPrice(){
         double sum = 0;
         for(Product p: item.keySet()){
-            sum+=p.getPrice();
+            sum+=(p.getPrice()*item.get(p));
         }
         return sum;
     }
