@@ -14,7 +14,6 @@ public class Shipping {
         }
         String unite= "lb";
 
-        ////////////////** edge casese
 
         if(totalWeight>1000){
             totalWeight = totalWeight/1000;
