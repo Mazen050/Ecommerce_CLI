@@ -9,7 +9,7 @@ public class Cart {
     public void add(Product p,int quantity)throws Exception{
         int availableQuantity = p.getQuantity();
         if(p.isExpired()){
-            throw new Exception("Item Expired");
+            throw new Exception("Item Expired: "+p.getName());
         }
         else if(availableQuantity==0){
                 throw new Exception("Item Out of Stock");
