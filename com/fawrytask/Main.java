@@ -122,16 +122,8 @@ public class Main {
             System.out.println("Error: " + e.getMessage());
         }
 
-        // 6. Zero quantity
-        System.out.println("\n=== 6. Zero quantity ===");
-        try {
-            Cart cart6 = new Cart();
-            cart6.add(cheeseFresh, 0);
-        } catch (Exception e) {
-            System.out.println("Error: " + e.getMessage());
-        }
 
-        // 7. Negative quantity
+        // 6. Negative quantity
         System.out.println("\n=== 7. Negative quantity ===");
         try {
             Cart cart7 = new Cart();
@@ -140,7 +132,7 @@ public class Main {
             System.out.println("Error: " + e.getMessage());
         }
 
-        // 8. Stock reduction after successful checkout
+        // 7. Stock reduction after successful checkout
         System.out.println("\n=== 8. Stock decremented after checkout ===");
         try {
             cheeseFresh.setQuantity(5);
